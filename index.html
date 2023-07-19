@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <img src="images/background.png" alt="" class="bg" />
+    <header class="header">
+      <div class="header__nav">
+        <a href="" class="logo"><img src="images/logo.png" alt="" /></a>
+        <div class="header__nav-contacts">
+          <div class="header__nav-smi">
+            <a href="" class="tg"><img src="images/tg.png" alt="" /></a>
+            <a href="" class="whatsapp"
+              ><img src="images/whatsapp.png" alt=""
+            /></a>
+          </div>
+          <a href="" class="header__nav-number">+99899 xxx xx xx</a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <button id="open-popup" class="download">
+        <p class="download-text">Download brochure</p>
+        <img src="images/download.png" alt="" class="download-img" />
+      </button>
+
+      <div class="popup-bg">
+        <img src="images/close.png" alt="" class="close-popup" />
+        <div class="popup">
+          <div class="form-left">
+            <div class="form-left-content">
+              <h2 class="form-title">don't miss <br />the unique offer</h2>
+              <p class="form-text">
+                Be the first to experience the beauty of Keturah Resort at our
+                exclusive private screening event! Leave your contact
+                information below to receive an invitation to our special event.
+              </p>
+              <div class="smi">
+                <div class="smi-form">
+                  <img src="images/telegram-circle.png" alt="" />
+                  <p class="form-smi">Telegram</p>
+                </div>
+                <div class="smi-form">
+                  <img src="images/whatsapp-circle.png" alt="" />
+                  <p class="form-smi">WhatsApp</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-right">
+            <form action="" class="form">
+              <input type="text" class="form-name" placeholder="Your name" />
+              <input type="text" class="form-name" placeholder="Your e-mail" />
+              <input type="tel" class="form-name" placeholder="Phone number" />
+              <button type="submit" class="form-btn">Join now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <button onclick="openModal(1)" id="panoOpen" class="button1">
+        <img src="images/M1.png" alt="" class="m1" />Apartments
+      </button>
+      <button onclick="openModal(2)" class="button2">
+        <img src="images/P1.png" alt="" class="m1" />Park
+      </button>
+      <button onclick="openModal(3)" class="button3">
+        <img src="images/R2.png" alt="" class="m1" />Road
+      </button>
+      <button onclick="openModal(4)" class="button4">
+        <img src="images/M2.png" alt="" class="m1" />Mansions
+      </button>
+
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal(1)">&times;</span>
+          <div id="modal1-image" class="pano-image"></div>
+        </div>
+      </div>
+
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal(2)">&times;</span>
+          <div id="modal2-image" class="pano-image"></div>
+        </div>
+      </div>
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal(3)">&times;</span>
+          <div id="modal3-image" class="pano-image"></div>
+        </div>
+      </div>
+      <div id="modal4" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal(4)">&times;</span>
+          <div id="modal4-image" class="pano-image"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/three/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
